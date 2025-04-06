@@ -1,28 +1,27 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import React from "react";
 import { Link } from "expo-router";
 
 const Index = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
-        margin: "auto",
-      }}
-    >
-      <Text className="font-bold text-lg my-10">
-        WelCome To Restate Project
+    <View className="flex-1 items-center justify-center">
+      <Text className="px-4 font-bold text-lg my-10 font-rubik">
+        Welcome To Restate Project
       </Text>
-      <Link href="/sign-in">Sign In</Link>
-      <Link href="/explore">Explore</Link>
-      <Link href="/profile">Profile</Link>
-      <Link href="/properties">Properties</Link>
+      <Link href="/sign-in" className="text-blue-500 mb-2">
+        Sign In
+      </Link>
+      <Link href="/explore" className="text-blue-500 mb-2">
+        Explore
+      </Link>
+      <Link href="/profile" className="text-blue-500 mb-2">
+        Profile
+      </Link>
+      <Link href="/properties" className="text-blue-500">
+        Properties
+      </Link>
     </View>
   );
 };
 
 export default Index;
-
-const styles = StyleSheet.create({});

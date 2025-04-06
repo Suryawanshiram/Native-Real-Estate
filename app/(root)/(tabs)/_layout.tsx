@@ -2,9 +2,9 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import Index from ".";
 
-const TabsLayout = () => {
+const AppLayout = () => {
   return (
-    <View>
+    <View className="flex-1 items-center justify-center">
       <Text>
         <Index />
       </Text>
@@ -12,6 +12,6 @@ const TabsLayout = () => {
   );
 };
 
-export default TabsLayout;
+export default AppLayout;
 
 const styles = StyleSheet.create({});
